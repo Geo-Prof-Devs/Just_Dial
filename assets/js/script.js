@@ -45,7 +45,7 @@ document.querySelectorAll('.navbar-link').forEach(link => {
     link.style.color = '#E93B81'; 
   }); 
   link.addEventListener('mouseout', () => { 
-    link.style.color = 'black'; 
+    link.style.color = 'white'; 
   }); 
 });
 
