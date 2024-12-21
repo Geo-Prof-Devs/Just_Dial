@@ -1,26 +1,15 @@
-/*-----------------------------------*\
-  #style.css
-\*-----------------------------------*/
+/** #STYLES_ROOT.css */
+/** copyright 2024 justdialfinancialservices */
 
-/**
- * copyright 2022 codewithsadee
- */
+/** Imports */
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,800);
 
-
- @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
- @import url(https://fonts.googleapis.com/css?family=Raleway:400,800);
-
-
-/*-----------------------------------*\
-  #CUSTOM PROPERTY
-\*-----------------------------------*/
+/** CUSTOM PROPERTIES */
 
 :root {
 
-  /**
-   * colors
-   */
-
+  /** colors */
   --st-patricks-blue: hsl(236, 57%, 28%);
   --amaranth-purple: hsl(335, 88%, 38%);
   --royal-blue-dark: hsl(231, 68%, 21%);
@@ -40,10 +29,7 @@
   --gradient-1: linear-gradient(90deg,var(--royal-blue-dark) 0,var(--ksu-purple) 51%,var(--royal-blue-dark));
   --gradient-2: linear-gradient(90deg,var(--razzmatazz) ,var(--rajah));
 
-  /**
-   * typography
-   */
-
+  /** typographY */
   --ff-source-sans-pro: 'Source Sans Pro', sans-serif;
   --ff-poppins: 'Poppins', sans-serif;
   --ff-give-you-glory: 'Give You Glory', cursive;
@@ -68,45 +54,29 @@
   --fw-700: 700;
   --fw-800: 800;
 
-  /**
-   * border radius
-   */
-
+  /** border radius */
   --radius-4: 4px;
   --radius-12: 12px;
 
-  /**
-   * spacing
-   */
-
+  /** spacing */
   --section-padding: 15px;
   --section-top-padding: 50px;
   --banner-padding: 50px;
 
-  /**
-   * transition
-   */
-
+  /** transition */
   --transition-1: 0.15s ease;
   --transition-2: 0.35s ease;
   --cubic-in: cubic-bezier(0.51, 0.03, 0.64, 0.28);
   --cubic-out: cubic-bezier(0.33, 0.85, 0.56, 1.02);
 
-  /**
-   * shadow
-   */
-
+  /** shadow */
   --shadow: 0 5px 20px 1px hsla(220, 63%, 33%, 0.1);
-
 }
 
 
 
-
-
-/*-----------------------------------*\
-  #RESET
-\*-----------------------------------*/
+/** #STYLES_RESET.css */
+/** copyright 2024 justdialfinancialservices */
 
 *,
 *::before,
@@ -154,13 +124,6 @@ body {
   background-color: var(--white);
   color: var(--purple-navy);
   font-size: 1.6rem;
-
-  /* background: url(../images/wallpapeer.jpg);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-  min-height: 100vh; */
 }
 
 ::-webkit-scrollbar { width: 10px; }
@@ -176,17 +139,14 @@ body {
 
 /* Hide scrollbar for IE, Edge and Firefox */
 ::-webkit-scrollbar {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none;  
+  scrollbar-width: none;  
 }
 
 
 
-
-
-/*-----------------------------------*\
-  #REUSED STYLE
-\*-----------------------------------*/
+/** #STYLES_REUSED.css */
+/** copyright 2024 justdialfinancialservices */
 
 .container { padding-inline: 15px; }
 
@@ -221,7 +181,6 @@ body {
     transform: translateY(0); 
   }
 }
-
 
 .section { padding-block: var(--section-padding); }
 
@@ -262,9 +221,9 @@ body {
 }
 
 
-/*-----------------------------------*\
-  #HEADER
-\*-----------------------------------*/
+
+/** #HEADER.css */
+/** copyright 2024 justdialfinancialservices */
 
 .header .btn { display: none; }
 
@@ -370,8 +329,7 @@ body {
   pointer-events: all;
 }
 
-
-/**Section Top Padding**/
+/**Section Top Padding in the Header**/
 .section-top {
   padding-block: var(--section-top-padding);
 }

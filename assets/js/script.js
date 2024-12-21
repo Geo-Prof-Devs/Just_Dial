@@ -1,11 +1,6 @@
 'use strict';
 
-
-
-/**
- * navbar toggle
- */
-
+/** Toggling the state of the Nav Bar on different screen sizes */
 const navOpenBtn = document.querySelector("[data-nav-open-btn]");
 const navbar = document.querySelector("[data-navbar]");
 const navCloseBtn = document.querySelector("[data-nav-close-btn]");
@@ -21,25 +16,18 @@ for (let i = 0; i < elemArr.length; i++) {
 }
 
 
-
-/**
- * Change navbar background color on scroll
- */
-
+/** Handling the Nav Bar background color on scrolling the webpage */
 window.addEventListener('scroll', function () {
-  const header = document.querySelector('.header');  // Select the header
-  if (window.scrollY > 50) {  // When scrolled more than 50px
-    header.classList.add('active');  // Add the 'active' class to the header
+  const header = document.querySelector('.header');  
+  if (window.scrollY > 50) {  
+    header.classList.add('active');  
   } else {
-    header.classList.remove('active');  // Remove the 'active' class when at top
+    header.classList.remove('active');  
   }
 });
 
 
-/**
- * Change navbar link color on hover
- */
-
+/** Handling the Nav Bar link color on hovering on them */
 document.querySelectorAll('.navbar-link').forEach(link => { 
   link.addEventListener('mouseover', () => { 
     link.style.color = '#E93B81'; 
@@ -50,11 +38,7 @@ document.querySelectorAll('.navbar-link').forEach(link => {
 });
 
 
-
-/**
- * toggle navbar & overlay when click any navbar-link
- */
-
+/** Dismissing the Nav Bar and Overlay when a Nav Bar link is seleected */
 const navbarLinks = document.querySelectorAll("[data-navbar-link]");
 
 for (let i = 0; i < navbarLinks.length; i++) {
@@ -65,14 +49,7 @@ for (let i = 0; i < navbarLinks.length; i++) {
 }
 
 
-
-
-
-/**
- * header & go-top-btn active
- * when window scroll down to 400px
- */
-
+/** Function for Auto-Scrolling to the top of the Webpage when at 400px */
 const header = document.querySelector("[data-header]");
 const goTopBtn = document.querySelector("[data-go-top]");
 
